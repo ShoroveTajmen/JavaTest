@@ -1,0 +1,24 @@
+Throwable
+    Exception
+        IOException
+        ClassNotFoundException
+        RuntimeException
+            ArithmeticException
+            NullPointerException
+            .........
+        .....
+        .....
+    Error
+
+
+
+Parent{}
+
+Child extends Parent{}
+
+Child c = new Child();
+Parent x = new Child();
+Parent y = new Parent();
+Child z = new Parent();
+
+

@@ -8,6 +8,13 @@ public class child extends parent {
     public static void main(String[] args){
         parent p = new parent();
         child c = new child();
+
+//        child x = new parent();
+//        x.show();
+
+        parent y = new child();
+        y.display();
+
         p.display();
         c.show();
         c.display();
