@@ -1,6 +1,6 @@
 package BinarySearching;
 
-public class Searching {
+public class Binary_searching {
     int binarySearch(int arr[],int left,int right,int x)
     {
         while(left <= right){
@@ -20,10 +20,10 @@ public class Searching {
 
     public static void main(String[] args) {
 
-        int arr[] = { 2, 3, 4, 10, 40 };
+        int arr[] = {1,2,3,4,5};
         int n = arr.length;
-        int x = 4;
-        Searching s = new Searching();
+        int x = 5;
+        Binary_searching s = new Binary_searching();
         int result = s.binarySearch(arr, 0, n - 1, x);
         if (result == -1){
             System.out.println("Element not present");
@@ -33,3 +33,5 @@ public class Searching {
 
     }
 }
+
+//time complexity O(log2n)

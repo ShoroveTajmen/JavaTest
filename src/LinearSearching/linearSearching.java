@@ -22,3 +22,4 @@ public class linearSearching {
             System.out.print("Founded at index " + result);
     }
 }
+// time complexity O(n)

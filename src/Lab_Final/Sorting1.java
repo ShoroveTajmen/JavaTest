@@ -3,19 +3,19 @@ package Lab_Final;
 import Insertion.InsertionSort;
 
 public class Sorting1 {
-    void insert(int arr[]){
+    void insert(int arr1[]){
 
         int i,j,x;
-        int n = arr.length;
+        int n = arr1.length;
         for( i=0; i<n; i++){
             j=i-1;
-            x = arr[i];
+            x = arr1[i];
 
-            while(j>-1 && arr[j]>x){
-                arr[j+1] = arr[j];
+            while(j>-1 && arr1[j]>x){
+                arr1[j+1] = arr1[j];
                 j--;
             }
-            arr[j+1] = x;
+            arr1[j+1] = x;
 
         }
 
@@ -40,14 +40,15 @@ public class Sorting1 {
 
 
     public static void main(String[] args) {
-        int arr[] = {1,5,9,3,7};
-        int n = arr.length;
+        int arr1[] = {1,5,9,3,7};
+        int arr2[] ={3,4,5,67,9};
+        int n = arr1.length;
         Sorting1 I = new Sorting1();
-        I.insert(arr);
+        I.insert(arr1);
         System.out.println("sort: ");
-        I.display(arr);
-        I.median(arr,n);
-        System.out.println("Median value: " + median(arr, n));
+        I.display(arr1);
+        I.median(arr1,n);
+        System.out.println("Median value: " + median(arr1, n));
 
     }
 }
