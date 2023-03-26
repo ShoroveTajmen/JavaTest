@@ -84,7 +84,7 @@ public class PopulatingNextRightPointersinEachNode {
                     q.add(node.right);
                 nodeCount--;
             }
-            System.out.println("#");
+            System.out.print("#" + " ");
         }
     }
 
